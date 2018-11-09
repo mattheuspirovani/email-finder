@@ -91,7 +91,8 @@ function onSubmit(e) {
     loadingCover.removeClass('show');
     
     // Set result
-    $('#result').html('Ooops! Ocorreu um erro ao tentar encontrar o email.'+ err);
+    $('#result').html('Ooops! Ocorreu um erro ao tentar encontrar o email.');
+    console.log(err)
   });
 
   return false;
