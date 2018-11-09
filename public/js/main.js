@@ -84,12 +84,6 @@ function onSubmit(e) {
     // Set result
     $('#result').html('Sucesso! O email é: ' + data.email);
 
-    // Count the number of submissions
-    sessionData.submissions++;
-
-    window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(sessionData));
-
-    checkSession();
   })
   .fail(function (err) {
 
