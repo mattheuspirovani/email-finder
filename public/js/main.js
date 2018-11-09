@@ -89,9 +89,9 @@ function onSubmit(e) {
 
     // Hide loading screen
     loadingCover.removeClass('show');
-
+    
     // Set result
-    $('#result').html('Ooops! Ocorreu um erro ao tentar encontrar o email.');
+    $('#result').html('Ooops! Ocorreu um erro ao tentar encontrar o email.'+ err);
   });
 
   return false;
